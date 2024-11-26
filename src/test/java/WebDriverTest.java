@@ -26,7 +26,7 @@ public class WebDriverTest {
     @Test
     public void smokeTest() {
         driver.get("https://skryabin.com/market/quote.html");
-        driver.findElement(By.xpath("//input[@name='username']")).sendKeys("john_doe");
+        driver.findElement(By.xpath("//input[@name='username']")).sendKeys("jdoe");
         driver.findElement(By.xpath("//input[@id='name']")).click();
         driver.findElement(By.xpath("//input[@id='firstName']")).sendKeys("John");
         driver.findElement(By.xpath("//input[@id='lastName']")).sendKeys("Doe");
@@ -38,10 +38,11 @@ public class WebDriverTest {
         driver.findElement(By.xpath("//button[@id='formSubmit']")).click();
     }
 
+    @DisplayName("New Window Test")
     @Test
     public void newWindowTest() {
         driver.get("https://skryabin.com/market/quote.html");
-        driver.findElement(By.xpath("//input[@name='username']")).sendKeys("john_doe");
+        driver.findElement(By.xpath("//input[@name='username']")).sendKeys("jdoe");
         driver.findElement(By.xpath("//input[@id='name']")).click();
         driver.findElement(By.xpath("//input[@id='firstName']")).sendKeys("John");
         driver.findElement(By.xpath("//input[@id='lastName']")).sendKeys("Doe");
